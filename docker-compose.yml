@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: solto-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-solto_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-solto_secret_pass}
+      POSTGRES_DB: ${POSTGRES_DB:-solto_db}
+    volumes:
+      - solto_pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-solto_user} -d ${POSTGRES_DB:-solto_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  solto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: solto-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgres://${POSTGRES_USER:-solto_user}:${POSTGRES_PASSWORD:-solto_secret_pass}@postgres:5432/${POSTGRES_DB:-solto_db}
+      - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+      - TWITTER_BEARER_TOKEN=${TWITTER_BEARER_TOKEN:-}
+      - TWITTER_API_KEY=${TWITTER_API_KEY:-}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET:-}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN:-}
+      - TWITTER_ACCESS_SECRET=${TWITTER_ACCESS_SECRET:-}
+      - RESEND_API_KEY=${RESEND_API_KEY:-}
+      - EMAIL_FROM=${EMAIL_FROM:-Solto Support <support@solto.io>}
+      - SMTP_HOST=${SMTP_HOST:-}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER:-}
+      - SMTP_PASS=${SMTP_PASS:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  solto_pgdata:
+    name: solto_pgdata

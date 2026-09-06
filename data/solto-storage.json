@@ -1,0 +1,293 @@
+{
+  "conversations": [
+    {
+      "id": "conv_1788737681424_ziy8f",
+      "brandId": "brand_default",
+      "channelId": "chn_livechat",
+      "channelType": "livechat",
+      "customerName": "Test Visitor",
+      "customerHandle": "visitor_kqrl@livechat",
+      "customerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop",
+      "snippet": "Inbound live chat test!",
+      "unread": true,
+      "isListeningCaught": false,
+      "isTicket": true,
+      "ticketStatus": "open",
+      "priority": "high",
+      "tags": [
+        "livechat",
+        "website-visitor"
+      ],
+      "approvalStatus": "approved",
+      "lastMessageAt": "2026-09-06T23:34:41.424Z",
+      "createdAt": "2026-09-06T23:34:41.424Z"
+    },
+    {
+      "id": "conv_1788735049530_fztxc",
+      "channelId": "chn_twitter",
+      "channelType": "twitter",
+      "customerName": "STARTUP FOUNDER",
+      "customerHandle": "@startup_founder",
+      "customerAvatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop",
+      "snippet": "Just discovered Solto! If anyone needs a simple open-source inbox, check it out.",
+      "unread": false,
+      "isListeningCaught": true,
+      "listeningKeyword": "Solto",
+      "lastMessageAt": "2026-09-06T22:50:49.530Z",
+      "createdAt": "2026-09-06T22:50:49.530Z"
+    },
+    {
+      "id": "conv_1",
+      "channelType": "twitter",
+      "customerName": "Alex Rivera",
+      "customerHandle": "@alex_dev",
+      "snippet": "Yes! Solto includes full Docker Compose with PostgreSQL 16 persistence and 1-click JSON/CSV exports.",
+      "unread": false,
+      "isListeningCaught": false,
+      "lastMessageAt": "2026-09-06T22:50:37.026Z",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    },
+    {
+      "id": "conv_2",
+      "channelType": "email",
+      "customerName": "Sarah Chen",
+      "customerHandle": "sarah@luminahealth.io",
+      "snippet": "yes",
+      "unread": false,
+      "isListeningCaught": false,
+      "lastMessageAt": "2026-09-06T23:02:11.696Z",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    },
+    {
+      "id": "conv_3",
+      "channelType": "twitter",
+      "customerName": "Dan K. Miller",
+      "customerHandle": "@techlead_dan",
+      "snippet": "Thinking about testing #Solto for our team's unified inbox.",
+      "unread": false,
+      "isListeningCaught": true,
+      "listeningKeyword": "Solto",
+      "lastMessageAt": "2026-09-06T22:43:15.779Z",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "conversationId": "conv_1",
+      "senderType": "customer",
+      "senderName": "Alex Rivera",
+      "content": "Hey! Does Solto support single-command Docker deployment with PostgreSQL persistence?",
+      "status": "delivered",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    },
+    {
+      "id": "msg_2",
+      "conversationId": "conv_2",
+      "senderType": "customer",
+      "senderName": "Sarah Chen",
+      "content": "We are migrating away from Sprinklr due to excessive pricing. Can we export all historical data at any time?",
+      "status": "delivered",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    },
+    {
+      "id": "msg_3",
+      "conversationId": "conv_3",
+      "senderType": "customer",
+      "senderName": "Dan K. Miller",
+      "content": "Thinking about testing #Solto for our team's unified inbox. Anyone tried their keyword listening?",
+      "status": "delivered",
+      "createdAt": "2026-09-06T22:43:15.779Z"
+    },
+    {
+      "conversationId": "conv_1",
+      "senderType": "agent",
+      "senderName": "Solto Support",
+      "senderHandle": "@solto_hq",
+      "content": "Yes! Solto includes full Docker Compose with PostgreSQL 16 persistence and 1-click JSON/CSV exports.",
+      "channelMessageId": "tw_sim_1788735037026_04fu",
+      "status": "delivered",
+      "id": "msg_1788735037026_baye6",
+      "createdAt": "2026-09-06T22:50:37.026Z"
+    },
+    {
+      "id": "msg_1788735049532",
+      "conversationId": "conv_1788735049530_fztxc",
+      "senderType": "customer",
+      "senderName": "STARTUP FOUNDER",
+      "senderHandle": "@startup_founder",
+      "content": "Just discovered Solto! If anyone needs a simple open-source inbox, check it out.",
+      "status": "delivered",
+      "createdAt": "2026-09-06T22:50:49.530Z"
+    },
+    {
+      "conversationId": "conv_2",
+      "senderType": "agent",
+      "senderName": "Solto Support",
+      "senderHandle": "support@solto.io",
+      "content": "yes",
+      "channelMessageId": "eml_sim_1788735731696_6ovo",
+      "status": "delivered",
+      "id": "msg_1788735731696_f1jkg",
+      "createdAt": "2026-09-06T23:02:11.696Z"
+    },
+    {
+      "id": "msg_1788737681426",
+      "conversationId": "conv_1788737681424_ziy8f",
+      "senderType": "customer",
+      "senderName": "Test Visitor",
+      "senderHandle": "visitor_kqrl@livechat",
+      "content": "Inbound live chat test!",
+      "status": "delivered",
+      "createdAt": "2026-09-06T23:34:41.424Z"
+    }
+  ],
+  "channels": [
+    {
+      "id": "chn_tw",
+      "type": "twitter",
+      "name": "Twitter/X",
+      "handle": "@solto_hq",
+      "isConnected": true
+    },
+    {
+      "id": "chn_eml",
+      "type": "email",
+      "name": "Email",
+      "handle": "support@solto.io",
+      "isConnected": true
+    }
+  ],
+  "keywords": [
+    {
+      "id": "kw_1",
+      "keyword": "Solto",
+      "channel": "all",
+      "isActive": true,
+      "matchCount": 14
+    }
+  ],
+  "scheduledPosts": [
+    {
+      "channelType": "twitter",
+      "content": "Automated post verification from Solto Phase 0 test suite!",
+      "scheduledFor": "2026-09-06T22:51:09.989Z",
+      "status": "published",
+      "publishedAt": "2026-09-06T22:51:09.989Z",
+      "id": "sch_1788735069989",
+      "createdAt": "2026-09-06T22:51:09.989Z"
+    }
+  ],
+  "automationRules": [
+    {
+      "id": "rule_1",
+      "name": "Sprinklr Migration Intent",
+      "conditionKeyword": "Sprinklr",
+      "actionType": "auto_tag",
+      "actionValue": "High Intent / Migration",
+      "isActive": true,
+      "lastTestedAt": "2026-09-06T23:23:14.337Z",
+      "matchCount": 1,
+      "createdAt": "2026-09-05T23:08:18.883Z"
+    },
+    {
+      "id": "rule_2",
+      "name": "Docker Deployment Quick Reply",
+      "conditionKeyword": "Docker",
+      "actionType": "auto_reply",
+      "actionValue": "Hi! Yes, Solto includes full single-command Docker Compose with PostgreSQL persistence out of the box.",
+      "isActive": true,
+      "matchCount": 2,
+      "createdAt": "2026-09-06T11:08:18.883Z",
+      "lastTestedAt": "2026-09-06T23:23:25.258Z"
+    }
+  ],
+  "brands": [
+    {
+      "id": "brand_default",
+      "name": "Solto Core",
+      "slug": "solto-core",
+      "logoText": "⚡ Solto",
+      "primaryColor": "#4f46e5",
+      "isDefault": true,
+      "createdAt": "2026-08-07T23:34:40.983Z"
+    },
+    {
+      "id": "brand_lumina",
+      "name": "Lumina Health (Client)",
+      "slug": "lumina-health",
+      "logoText": "🌿 Lumina",
+      "primaryColor": "#059669",
+      "isDefault": false,
+      "createdAt": "2026-08-23T23:34:40.983Z"
+    },
+    {
+      "id": "brand_vance",
+      "name": "Vance Agency (Client)",
+      "slug": "vance-agency",
+      "logoText": "🚀 Vance",
+      "primaryColor": "#0284c7",
+      "isDefault": false,
+      "createdAt": "2026-08-30T23:34:40.983Z"
+    }
+  ],
+  "paidCampaigns": [
+    {
+      "id": "camp_1",
+      "brandId": "brand_default",
+      "name": "Q3 Open CXM Alternative Blitz",
+      "budget": 3500,
+      "spend": 1840,
+      "targetChannel": "twitter",
+      "durationDays": 30,
+      "startDate": "2026-08-27",
+      "endDate": "2026-09-26",
+      "headline": "Stop paying $50,000/yr for Sprinklr. Deploy Solto in 60 seconds.",
+      "creativeUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop",
+      "status": "active",
+      "impressions": 48920,
+      "clicks": 1740,
+      "createdAt": "2026-08-27T23:34:40.983Z"
+    },
+    {
+      "id": "camp_2",
+      "brandId": "brand_lumina",
+      "name": "Lumina Patient Portal Expansion",
+      "budget": 1200,
+      "spend": 420,
+      "targetChannel": "email",
+      "durationDays": 14,
+      "startDate": "2026-09-02",
+      "endDate": "2026-09-16",
+      "headline": "Unified Patient Care Communications with Zero Data Lock-In.",
+      "creativeUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=450&fit=crop",
+      "status": "active",
+      "impressions": 12400,
+      "clicks": 890,
+      "createdAt": "2026-09-02T23:34:40.983Z"
+    }
+  ],
+  "governanceConfig": {
+    "approvalRequired": false,
+    "complianceWords": [
+      "guaranteed return",
+      "100% refund guaranteed",
+      "confidential insider",
+      "warranted profit",
+      "unconditional warranty"
+    ]
+  },
+  "approvals": [
+    {
+      "id": "appr_1",
+      "type": "reply",
+      "targetChannel": "twitter",
+      "authorName": "Junior Agent (Dave)",
+      "recipientOrChannel": "@alex_dev",
+      "content": "We provide an unconditional 100% warranty on all server performance metrics.",
+      "status": "approved",
+      "feedbackNote": "Flagged by compliance engine: phrase 'unconditional warranty' detected.",
+      "createdAt": "2026-09-06T23:04:40.983Z"
+    }
+  ]
+}
