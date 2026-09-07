@@ -9,7 +9,7 @@
       "customerHandle": "visitor_kqrl@livechat",
       "customerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop",
       "snippet": "Inbound live chat test!",
-      "unread": true,
+      "unread": false,
       "isListeningCaught": false,
       "isTicket": true,
       "ticketStatus": "open",
